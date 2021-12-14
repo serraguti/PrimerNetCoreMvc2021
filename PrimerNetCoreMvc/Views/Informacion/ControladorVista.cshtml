@@ -1,0 +1,11 @@
+﻿@model Persona 
+
+<h1>Información recibida</h1>
+
+<h1 style="color:red;background-color:yellow">
+    @Model.Nombre, Edad: @Model.Edad, Email: @Model.Email
+</h1>
+
+<h2 style="color:blue">
+    Su nombre es @ViewBag.Nombre y su edad es @ViewData["Edad"]
+</h2>

@@ -1,0 +1,15 @@
+﻿<h1>Menú información entre componentes</h1>
+
+<ul class="list-group">
+    <li class="list-group-item">
+        <a asp-controller="Informacion"
+           asp-action="ControladorVista">
+            Información controlador vista
+        </a>
+    </li>
+    <li>
+        @Html.ActionLink("Información GET Vista Controller"
+       , "VistaControllerGet", "Informacion",
+       new { app = "Net Core", version = 5 })
+    </li>
+</ul>
