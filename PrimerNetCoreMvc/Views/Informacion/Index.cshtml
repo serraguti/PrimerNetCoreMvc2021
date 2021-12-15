@@ -7,9 +7,30 @@
             Información controlador vista
         </a>
     </li>
-    <li>
+    <li class="list-group-item">
+        <a asp-controller="Informacion"
+           asp-action="VistaControllerGet"
+           asp-route-app="Net Core Mvc"
+           asp-route-version="5">
+            Información GET Vista Controller
+        </a>
+    </li>
+    <li class="list-group-item">
         @Html.ActionLink("Información GET Vista Controller"
        , "VistaControllerGet", "Informacion",
        new { app = "Net Core", version = 5 })
+    </li>
+    <li class="list-group-item">
+        <a asp-controller="Informacion"
+           asp-action="VistaPost">
+            Enviar información POST
+        </a>
+    </li>
+    <li class="list-group-item">
+        <a asp-controller="Informacion"
+           asp-action="VistaNumeroDoble"
+           asp-route-numero="7">
+            Número doble 7
+        </a>
     </li>
 </ul>
